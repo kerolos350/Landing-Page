@@ -356,7 +356,7 @@ section {
 }
 
 .workText p {
-    font-size: var(--h2);
+    font-size: var(--h3);
     color: var(--shadowColor3);
     margin-top: 0px;
 }

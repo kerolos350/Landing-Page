@@ -31,7 +31,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: transparent; 
+    background: var(--primaryColor); 
 } 
 
 body {
@@ -213,7 +213,7 @@ section {
 .crop{
     width: 350px;
     height: 450px;
-    background: url(/src/WhatsApp\ Image\ 2024-12-11\ at\ 4.51.40\ PM.png) no-repeat  border-box padding-box;
+    background: url(./src/WhatsApp\ Image\ 2024-12-11\ at\ 4.51.40\ PM.png) no-repeat  border-box padding-box;
     background-size: 550px;
     background-position-x: center;
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
@@ -305,7 +305,7 @@ section {
 .servThree {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin: 0px calc(50% - 10rem);
+    margin: 0px calc(50% - 8rem);
 }
 
 .servImg {
@@ -373,4 +373,203 @@ section {
     border-radius: 10px;
     background-color: var(--secondaryColor);
     box-shadow: 0px 0px 0px 0px var(--shadowColor3);
+}
+
+.Testimonials {
+    width: calc(100vw - 200px);
+    padding: 0px 100px;
+    color: var(--primaryColor);
+}
+
+.Testimonials h1 {
+    font-size: var(--h1);
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.Testimonials p {
+    font-size: var(--h3);
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.testGrid {
+    width: fit-content;
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    color: var(--primaryColor);
+}
+
+.test {
+    width: 30rem;
+    height: 6rem;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.test div {
+    border-left: 1px solid var(--secondaryColor);
+    width: 9rem;
+}
+
+.test img {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--secondaryColor);
+}
+
+.test h2, .test p {
+    margin: 0px;
+}
+
+.test h2 {
+    font-size: var(--h2);
+}
+
+.test p {
+    font-size: var(--h3);
+    width: calc(100% - 9rem);
+}
+
+.testThree {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0px calc(50% - 15.5rem);
+}
+
+#contact {
+    width: calc(100% - 200px);
+    padding: 0px 100px;
+    flex-direction: row;
+}
+
+.email {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email h1 {
+    font-size: var(--h1);
+    font-weight: 800;
+    color: var(--primaryColor);
+}
+
+.email form {
+    height: 50%;
+}
+
+.email form input {
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondaryColor);
+    outline: none;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--primaryColor);
+    font-weight: 800;
+}
+
+.email form input:hover {
+    outline: 2px solid var(--primaryColor);
+}
+
+.email form input:focus {
+    outline: 2px solid var(--primaryColor);
+}
+
+.email form textarea {
+    width: 70%;
+    height: 8rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondaryColor);
+    padding: 0px 10px;
+    font-size: 20px;
+    color: var(--primaryColor);
+    font-weight: 800;
+}
+
+.email form textarea:hover {
+    outline: 2px solid var(--primaryColor);
+}
+
+.email form textarea:focus {
+    outline: 2px solid var(--primaryColor);
+}
+
+.email button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    color: var(--shadowColor3);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.hireMe {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hireMe div {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--shadowColor3);
+    font-size: var(--h2);
+    font-weight: 800;
+}
+
+.hireMe img {
+    width: 20px;
+    height: 20px;
+    filter: invert(0.8);
+    margin-left: 5px;
+}
+
+footer {
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--secondaryColor);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer span {
+    width: 40px;
+    height: 40px;
+    color: var(--shadowColor3);
+    align-content: center;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+
 }

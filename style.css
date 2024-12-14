@@ -233,7 +233,7 @@ section {
     width: calc(100% / 2);
 }
 
-.about h1 {
+.about h2 {
     color: var(--primaryColor);
     font-size: var(--h1);
     font-weight: 800;
@@ -251,7 +251,7 @@ section {
     flex-direction: row;
 }
 
-.services h1 {
+.services h2 {
     font-size: var(--h1);
     font-weight: 800;
     margin-bottom: 0px;
@@ -349,7 +349,7 @@ section {
     animation-range: contain 0% contain 100%;
 }
 
-.workText h1 {
+.workText h2 {
     font-size: var(--h1);
     color: var(--shadowColor3);
     margin-bottom: 0px;
@@ -381,7 +381,7 @@ section {
     color: var(--primaryColor);
 }
 
-.Testimonials h1 {
+.Testimonials h2 {
     font-size: var(--h1);
     font-weight: 800;
     margin-bottom: 0px;
@@ -460,7 +460,7 @@ section {
     justify-content: center;
 }
 
-.email h1 {
+.email h2 {
     font-size: var(--h1);
     font-weight: 800;
     color: var(--primaryColor);

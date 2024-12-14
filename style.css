@@ -213,7 +213,7 @@ section {
 .crop{
     width: 350px;
     height: 450px;
-    background: url(./src/WhatsApp\ Image\ 2024-12-11\ at\ 4.51.40\ PM.png) no-repeat  border-box padding-box;
+    background: url(./src/profile.png) no-repeat  border-box padding-box;
     background-size: 550px;
     background-position-x: center;
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);

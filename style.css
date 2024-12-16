@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=El+Messiri:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 :root {
     --primaryColor: #124E66;
@@ -108,7 +109,7 @@ section {
 .navContainer {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     font-size: var(--h2);
     padding: 0px 100px;
 }
@@ -118,6 +119,59 @@ section {
     justify-content: center;
     color: var(--primaryColor);
     font-weight: 800;
+}
+
+.navFunc {
+    display: flex;
+    gap: 10px;
+    margin-right: 15rem;
+}
+
+.switch {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    color: var(--shadowColor3);
+    font-size: var(--h2);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: var(--primaryColor);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme {
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 2px solid var(--shadowColor2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.themeBall {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moon, .sun {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.moon {
+    color: white;
+}
+
+.sun {
+    color: black;
+    display: none;
 }
 
 .navLinks {
@@ -171,8 +225,6 @@ section {
     cursor: pointer;
     text-decoration: none;
 }
-
-
 
 .reviews {
     width: 100%;
@@ -852,6 +904,17 @@ footer span {
 
 @media screen and (max-width: 700px) {
     
+    .navFunc {
+        position: absolute;
+        top: 3rem;
+        left: 35px;
+        z-index: 1000;
+    }
+
+    .navLinks {
+        gap: 20px;
+    }
+
     .intro {
         padding: 0 10px 0 0;
         width: 70%;
@@ -918,5 +981,39 @@ footer span {
 
     .test {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .crop {
+        width: 170px;
+        background-size: 450px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .crop {
+        width: 170px;
+        background-size: 350px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    
+    .intro {
+        width: 50%;
+    }
+
+    .intro h1 {
+        width: 14rem;
+        font-size: 18px;
+    }
+
+    .intro div {
+        width: 8rem;
+    }
+
+    .intro a {
+        width: calc(8rem + 10px);
     }
 }

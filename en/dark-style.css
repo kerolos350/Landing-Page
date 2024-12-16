@@ -556,6 +556,7 @@ section {
 .email form textarea {
     width: 70%;
     height: 8rem;
+    padding: 0px 10px;
     border-radius: 10px;
     border: 1px solid var(--shadowColor2);
     padding: 0px 10px;
